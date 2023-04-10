@@ -1,38 +1,92 @@
+:root {
+  --mainColor: goldenrod;
+  --secondaryColor: #fff;
+  --bgColor: #836f3c;
+}
+* {
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
+  background: var(--bgColor);
+  height: 100vh;
+  padding: 2rem 1rem 1rem 1rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App,
+button,
+input,
+input::placeholder,
+.messages-container {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 55%;
+  margin: auto;
+  row-gap: 2rem;
+  background: var(--secondaryColor);
+  border-radius: 2px;
+  padding: 2rem;
+  box-shadow: 0 0 12px 2px #000;
+}
+input {
+  color: var(--bgColor);
+  border: 1px solid var(--mainColor);
+  border-radius: 2px;
+  padding: 10px;
+  outline: none;
+  transition: all ease-in-out 0.3s;
+}
+input:focus {
+  box-shadow: 0 0 3px 0 var(--mainColor);
 }
 
-.App-link {
-  color: #61dafb;
+input::placeholder {
+  font-size: small;
+  color: var(--mainColor);
+  letter-spacing: 0.04rem;
+}
+button {
+  text-transform: uppercase;
+  background: rgb(243, 233, 196);
+  color: var(--mainColor);
+  font-weight: bold;
+  letter-spacing: 0.06rem;
+  border: 2px outset var(--mainColor);
+  border-radius: 50px;
+  padding: 0.8rem;
+  transition: all ease-in 0.3s;
+}
+button:hover {
+  color: var(--secondaryColor);
+  background: var(--mainColor);
+}
+h1 {
+  text-transform: uppercase;
+  color: var(--mainColor);
+  letter-spacing: 0.06rem;
+}
+.messages-container {
+  padding: 1rem 1rem 1rem 0;
+  text-align: justify;
+  min-height: 250px;
+  border: 1px dashed var(--mainColor);
+}
+li {
+  list-style-type: none;
+  margin-bottom: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 800px) {
+  .container {
+    max-width: 70%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    max-width: 83%;
   }
 }
