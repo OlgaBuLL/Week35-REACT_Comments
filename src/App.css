@@ -23,7 +23,7 @@ input::placeholder,
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 55%;
+  max-width: 40%;
   margin: auto;
   row-gap: 2rem;
   background: var(--secondaryColor);
@@ -81,12 +81,12 @@ li {
 
 @media screen and (max-width: 800px) {
   .container {
-    max-width: 70%;
+    max-width: 61%;
   }
 }
 
 @media screen and (max-width: 500px) {
   .container {
-    max-width: 83%;
+    max-width: 80%;
   }
 }
