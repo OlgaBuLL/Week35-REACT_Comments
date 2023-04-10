@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Week35-REACT_Comments/static/css/main.a8fb9152.css",
+    "main.css": "/Week35-REACT_Comments/static/css/main.33691fca.css",
     "main.js": "/Week35-REACT_Comments/static/js/main.3da60f62.js",
     "static/js/787.0d8ea4a7.chunk.js": "/Week35-REACT_Comments/static/js/787.0d8ea4a7.chunk.js",
     "index.html": "/Week35-REACT_Comments/index.html",
-    "main.a8fb9152.css.map": "/Week35-REACT_Comments/static/css/main.a8fb9152.css.map",
+    "main.33691fca.css.map": "/Week35-REACT_Comments/static/css/main.33691fca.css.map",
     "main.3da60f62.js.map": "/Week35-REACT_Comments/static/js/main.3da60f62.js.map",
     "787.0d8ea4a7.chunk.js.map": "/Week35-REACT_Comments/static/js/787.0d8ea4a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8fb9152.css",
+    "static/css/main.33691fca.css",
     "static/js/main.3da60f62.js"
   ]
 }
